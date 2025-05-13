@@ -41,6 +41,6 @@
         </div>
     </div>
     <div class="container mx-auto text-center">
-        <p>&copy; {{ date('Y') }} TravelEasy. Alle rechten voorbehouden.</p>
+        <p>&copy; {{ date('Y') }} Alle rechten voorbehouden.</p>
     </div>
 </footer>
