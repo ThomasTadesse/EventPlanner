@@ -14,30 +14,18 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-gray-900 text-gray-100">
-        <div class="min-h-screen">
-            <nav class="bg-gray-800 border-b border-gray-700">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex justify-between h-16">
-                        <div class="flex">
-                            <div class="shrink-0 flex items-center">
-                                <a href="/">
-                                    <h1 class="text-xl font-bold">EventPlanner</h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+    <body class="font-sans antialiased">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            @include('layouts.navigation')
 
             <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-gray-800 shadow">
+            @isset($header)
+                <header class="bg-white dark:bg-gray-800 shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>
-            @endif
+            @endisset
 
             <!-- Page Content -->
             <main>
